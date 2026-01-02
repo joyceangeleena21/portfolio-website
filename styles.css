@@ -1,0 +1,175 @@
+/* ================= GLOBAL ================= */
+* {
+    font-family: monospace;
+    box-sizing: border-box; /* include padding/border in element size */
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 15px;
+    background-color: #f0f8ff;
+}
+
+/* ================= HEADER ================= */
+header {
+    height: 100vh;
+    color: white;
+    background-color: #2196F3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.button {
+    height: 40px;
+    width: 140px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button:hover {
+    color: white;
+    background-color: darkblue;
+}
+
+/* ================= HEADINGS ================= */
+h1 {
+    font-size: 40px;
+    color: #2196F3;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 30px;
+    color: #2196F3;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* ================= MAIN ================= */
+main {
+    padding: 20px;
+}
+
+/* ================= SECTIONS ================= */
+section {
+    min-height: 100vh; /* at least full screen */
+    border: 1px solid grey;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 30px; /* space inside section */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section p {
+    text-align: center;
+    max-width: 700px;
+    word-wrap: break-word;
+    margin: 10px 0;
+}
+
+section a {
+    color: #2196F3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section a:hover {
+    text-decoration: underline;
+}
+
+/* ================= IMAGE ================= */
+img {
+    height: 250px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+/* ================= FORM ================= */
+input {
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    height: 25px;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.submit {
+    height: 40px;
+    width: 140px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: #2196F3;
+}
+
+.submit:hover {
+    background-color: #1178cd;
+}
+
+/* ================= TABLE ================= */
+table {
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* ================= LINKS ================= */
+a {
+    color: #2196F3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ================= TOP BUTTON ================= */
+.fixedButton {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    height: 70px;
+    width: 70px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+    background-color: #2196F3;
+    display: none; /* show via JS when scrolled */
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background-color: black;
+    color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}

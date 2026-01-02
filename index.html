@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+
+        <a href="#about"><button class="button">About</button></a>
+        <a href="#skills"><button class="button">Skills</button></a>
+        <a href="#projects"><button class="button">Projects</button></a>
+        <a href="#contact"><button class="button">Contact</button></a>
+    </header>
+
+    <main>
+
+        <!-- ABOUT SECTION -->
+        <section id="about">
+            <h1>Joyce Angeleena Tera</h1>
+            <img src="demo1.jpeg" alt="A Photo of me">
+            <p>I am an Artificial Intelligence and Data Science student</p>
+            <p>
+                I am currently pursuing my B.Tech in 
+                <em>Shri Vishnu Engineering College for Women</em>, Bhimavaram
+            </p>
+            <p>I have keen interest in learning:<br>HTML, CSS, JavaScript</p>
+
+            <p>
+                You can 
+                <a href="https://github.com/joyceangeleena21" target="_blank">
+                    <strong>click here</strong>
+                </a>
+                to check what I have learnt
+            </p>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills">
+            <h1>My Skills</h1>
+            <ol>
+                <li>HTML Basics</li>
+                <li>Python Basics</li>
+                <li>Java Basics</li>
+                <li>CSS Basics</li>
+            </ol>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects">
+            <h1>My Projects</h1>
+            <table border="1">
+                <tr>
+                    <th>Project</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Portfolio Website</td>
+                    <td>Built using HTML, CSS & JavaScript</td>
+                </tr>
+                <tr>
+                    <td>Road Accident Analysis Dashboard</td>
+                    <td>Built using Power BI for accident insights</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <h1>Contact Me</h1>
+
+            <!-- Formspree Form -->
+            <form action="https://formspree.io/f/xdakgkwv" method="POST">
+                <label>Name:</label>
+                <input type="text" name="name" required><br><br>
+
+                <label>Email:</label>
+                <input type="email" name="email" required><br><br>
+
+                <b>Choose your gender:</b><br>
+                <input type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" value="Female"> Female
+                <br><br>
+
+                <b>Select your interests:</b><br>
+                <input type="checkbox" name="interests" value="Coding"> Coding
+                <input type="checkbox" name="interests" value="Reading"> Reading
+                <br><br>
+
+                <label>Bio (up to 200 characters):</label><br>
+                <input type="text" name="bio" maxlength="200"><br><br>
+
+                <button type="submit" class="submit">Submit</button>
+            </form>
+        </section>
+
+    </main>
+
+    <button class="fixedButton">TOP</button>
+
+    <footer>
+        <p>© 2025 My Portfolio</p>
+    </footer>
+
+    <!-- TOP BUTTON SCRIPT -->
+    <script>
+        const topBtn = document.querySelector(".fixedButton");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+                topBtn.style.display = "block";
+            } else {
+                topBtn.style.display = "none";
+            }
+        });
+
+        topBtn.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
+
+</body>
+</html>
